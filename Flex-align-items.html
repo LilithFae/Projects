@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox align items</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<style>
+
+		body {
+			height: 100%;
+			margin: 0;
+		}
+
+		/*justify content : flex start = text krece sa leve strane stranice;
+		justify content: flex end = text krece sa desne strane stranice;
+		justify content: space between = stavlja se prosto izmedju elemenata;
+		jusity content: space around = slicno kao space between;*/
+		/*justify nam takodje pozicionira content*/
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			height: 300px;
+			border: 1px solid black;
+			align-items: center;
+
+			/*align items - flex end = ide text na dno bordera;
+			align items - flex start = digne text skroz na vrh ekrana, odnosno bordera;
+			align items - stretch = razvuce preko celog ekrana;
+			align items - baseline = skrati txt na vrh ;
+			align items - center = centrira u borderu;
+			za stretch i baseline izbrisati li height;
+			baseline je donji deo fonta, tako da se ono sto ima text spusta na dno slova*/
+
+		}
+
+		li  {
+			padding-top: 45px;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+						}
+
+		/*order nam sluzi da im promenimo raspored, odnosno da budu prikazani drugim redom onim kojim mi zelimo*/
+		ul li:nth-child(1) {
+			background-color: aqua;
+			order: 1;
+		}
+
+		ul li:nth-child(2) {
+			background-color: yellow;
+			order: 5;
+		}
+
+		ul li:nth-child(3) {
+			background-color: red;
+			order: 3;
+		}
+
+		ul li:nth-child(4) {
+			background-color: green;
+			order: 2;
+		}
+
+		ul li:nth-child(5) {
+			background-color: pink;
+			order: 4;
+		}
+
+		ul li:nth-child(6) {
+			background-color: orange;
+			order: 6;
+		}
+
+	</style>
+</head>
+<body>
+
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</ul>
+
+</body>
+</html>
