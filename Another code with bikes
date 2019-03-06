@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ana Radojicic homework 4</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		* {box-sizing: border-box;}
+        
+        #bikes {
+            margin: 25px 250px;           
+            width: max 500px;
+        }
+
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.header {
+			overflow: hidden;
+			size: 150px;
+			transform: translate3d(42px, -69px; 132px);
+		}
+		.foot1 {
+			text-align: left;
+		}
+
+		.foot2 {
+			text-align: right;
+		}
+
+		.p1 {
+			font-size: 16px;
+		}
+
+		.p2 {
+			font-size: 13px;
+		}
+
+		.li { 
+		font-size: 14px;
+		 }
+
+		 .invisible : {
+		 position: relative;
+		 text-align: center;	 	
+		 }
+
+		 a:link {
+		 	display: none;
+		 	color: lightblue;
+		 	font-size: 30px;
+		 }
+		 a:visited {
+		 	font-size: 20px
+		 	color: gray;
+		 }
+
+		 div:hover a {
+		 	display: block;
+		 	overflow: visible;
+		 }
+
+		</style>
+</head>
+<body>
+<div id="bikes">
+	<div class="header">
+		<img src="specialized.png" alt="mycompany" target="_blank">
+		<a href="https://en.wikipedia.org/wiki/Racing_bicycle" target="_blank" class="invisible">Road bicycles
+		</a>
+	</div>
+
+	<br><br><br>
+
+	<div>
+		<ul>
+			<li>Specialized</li>
+			<li>Ridley</li>
+			<li>Pinarello</li>
+		</ul>
+	</div>
+	<br><br>
+
+	<div class="p1">
+	<p>Road bicycle racing is the cycle sport discipline of road cycling, held on paved roads. Road racing is the most popular professional form of bicycle racing, in terms of numbers of competitors, events and spectators. The two most common competition formats are mass start events, where riders start simultaneously (though sometimes with a handicap) and race to set finish point; and time trials, where individual riders or teams race a course alone against the clock. Stage races or "tours" take multiple days, and consist of several mass-start or time-trial stages ridden consecutively.</p>
+	</div>
+
+<div class="p2">
+	<p>Professional racing has been most popular in Western Europe, centered historically on France, Spain, Italy and the Low Countries. Since the mid-1980s the sport has diversified with professional races now held on all continents of the globe. Semi-professional and amateur races are also held in many countries. The sport is governed by the Union Cycliste Internationale (UCI). As well as the UCI's annual World Championships for men and women, the biggest event is the Tour de France, a three-week race that can attract over 500,000 roadside supporters a day.</p>
+</div>
+	
+
+	<br><br><br>
+
+     <footer class="footer">	
+        <img src="trek.png" align="left" width="50px" height="70px" alt="Partner 1">         
+        <img src="pinarello.png" width="50px" height="70px" align="right" alt="Partner 2">
+     </footer>
+</div>
+ </body>
+</html>
