@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DOM</title>
+</head>
+<body>
+  
+  <!--
+document.createElement(element)    Create an HTML element
+document.removeChild(element)    Remove an HTML element
+document.appendChild(element)    Add an HTML element
+document.replaceChild(element)    Replace an HTML element
+document.write(text)    Write into the HTML output stream
+-->
+  
+   <button onclick="kreirajParagraf()">Dinamicko kreiranje HTML sadrzaja putem JS-a0</button>
+   
+   <script>
+       
+       /* Ako zelim da kad kliknem se tekst pojavi samo jednom, bez obzira koliko puta kliknem na dugme -
+       var counter = 0;
+function DodajElement(){
+   if (counter === 0){
+   counter += 1;*/
+       
+        function kreirajParagraf() {
+            var elementKojiKreiramo = document.createElement("p");
+            //paragraf ce biti umetnut na pocetak body-ja
+            
+            var sadrzajZaTajElement = document.createTextNode("Zdravo svima, pozdrav !");
+            /*povezujemo ih*/
+
+            elementKojiKreiramo.appendChild(sadrzajZaTajElement);
+            //ubaciti na stranicu
+
+            document.body.appendChild(elementKojiKreiramo);
+        }    
+    </script>
+    
+</body>
+</html>
