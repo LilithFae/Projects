@@ -1,0 +1,41 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Pseudo Classes</title>
+		<meta charset="utf-8">
+
+		<style>
+
+		/*sve ovo sto ide posle a: moze da bude u istoj liniji, odvojeno zarezom, tako da time obuhvatimo
+		sve moguce opcije vezane za taj deo u CSSu;*/
+
+			/*unvisited page a:link se koristi kad link jos nije koriscen*/
+			/*cursor menja oblik kursora u ono sto mi zelimo, mozemo staviti sta god hocemo od postojecih kursora, i pri prelasku preko reci, oblik kursora se menja*/
+			
+			a:link {
+				color: blueviolet;
+				font-size: 41px;
+				cursor: pointer;
+			}
+
+			/*visited page; kad smo vec isli na taj link*/
+			a:visited {
+				color: #ccc;
+			}
+
+			/* mouse over link hover*/
+			a:hover {
+				color: brown;
+			}
+
+			/*when we click, kad pritisnemo na link, dok drzimo misa na toj reci*/
+			a:active {
+				color:cornflowerblue;
+			}
+		</style>
+
+	</head>
+	<body>
+	<a href="http://google.rs">Google</a>
+	</body>
+	</html>
