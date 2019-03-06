@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+    var year = new Date().getFullYear();
+    var birthYear = 1856;
+        var osoba = {
+            ime: "Nikola",
+            prezime: "Tesla",
+            godina: year-1856,
+            zanimanje: "inzenjer",
+            pronalasci: ['indukcioni motor', 'radio', 'x-rays']
+        
+        }
+       
+     if(osoba.zanimanje=="inzenjer"){
+            console.log("Cao zdravo");
+             }
+    for (i=0; i<osoba.pronalasci.length; i++)
+    {console.log(osoba.pronalasci[i])}
+       
+  /* object(objekat) je kombinacija promenljivihi fja*/ 
+        /*Promenljive koje pripadaju objektu nazivaju se svojstva ( properties), a funkcije objekta nazivaju se metodi ( methods).*/
+    </script>
+</body>
+</html>
