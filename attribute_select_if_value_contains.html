@@ -1,0 +1,51 @@
+		<!DOCTYPE html>
+	<html>
+	<head>
+		<title>CSS ul li</title>
+		<meta charset="utf-8">
+		<style>
+			
+			/*select ukoliko vrednost sadrzi rec odvojenu razmakom*/
+ 
+  		img[alt|="en"] {
+				border: 10px solid yellow;
+			}	
+
+		input[value~="ime"] {
+			font-size:px;
+			outline: 10px solid red;
+			margin-top: 40px;
+		}
+
+		/*selektova su sve vrednosti koje sadrze ono sto se nalazi u "value"*/
+ 		input[value*="prezime"] {
+ 			font-size:40px;
+ 			outline: 10px solid green; 
+ 			margin-top: 40px;
+ 		}
+
+		</style>
+	</head>
+	
+	<body>
+
+		<img src="sworks.jpg" alt="en-us"/><br>
+		<img src="sworks.jpg" alt="en-uk"/>
+
+		<form>
+			<input type="text" value="ovo je ime 1"/><br>
+			<input type="text" value="ovo je ime 2"/><br>
+			<input type="text" value="ovo je ime 3"/><br>
+			<input type="text" value="ovo je ime 4"/>
+		</form>
+
+<!-- ova * nam targetuje rec koju smo zadali u styl-u, tako da ne moramo da odvajamo rec od reci, mogu biti i sastavljene, on ce prepoznati rec koja je zadata u CSSu-->
+
+		<form>
+			<input type="text" value="ovoje prezime1"/><br>
+			<input type="text" value="ovo je prezime 2"/><br>
+			<input type="text" value="ovo je prezime 3"/><br>
+			<input type="text" value="ovo je prezime 4"/>
+		</form>
+	</body>
+	</html>
