@@ -1,0 +1,44 @@
+		<!DOCTYPE html>
+	<html>
+	<head>
+		<style>
+
+		div.fixed {
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 100%
+			height 50%;
+			border: 3px solid #73AD21;
+			background-color: #fff
+			}
+
+			.large {
+				width: 100%;
+				height: 200vh;
+			}
+
+		/* "vh" se koristi da bi svi ekrani preko kojis se pristupa web stranici da budu citljivi i da se slova i stranica prilagodjavaju visini ekrana na kojem se gleda stranica i obicno se stavlja za svaku sekciju, svaku stranicu na web pagu koju pravimo*/
+
+		</style>
+
+		<title>Fixed position</title>
+	</head>
+	<body>
+	
+
+		<h2>position : fixed </h2>
+
+		<p>An element with position : fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled :</p>
+
+		
+			<div class="fixed">
+		This div element has position : fixed;
+		<!-- kad skrolujemo niz stranicu ovaj div element stoji i ne pomera se, fiksiran je sve vreme;
+			ovo je dobro koristiti za NAVBAR-->
+			</div>
+			<div class="large">Test</div>
+		</div>
+
+	</body>
+	</html>
