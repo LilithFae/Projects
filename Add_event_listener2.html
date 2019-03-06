@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Event Listener</title>
+    <style>
+        #test {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    
+    </style>
+</head>
+<body>
+   <div id="test"></div>
+   
+<script>
+    var test = document.querySelector("#test");
+    test.addEventListener("mouseover", function() {
+        console.log("over !");
+    });
+    
+    test.addEventListener("mouseout", function() {
+        console.log("out !!");
+    });
+    
+    test.addEventListener("click", function() {
+        console.log("clicked !!");
+    });
+    
+</script>
+    
+</body>
+</html>
