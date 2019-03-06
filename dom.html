@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var ime = "Ana";
+    var prezime = "Radojicic";
+        
+    var godinaRodjenja = 1983;
+    var danas = 2019;
+        
+        /*brojevi se ne pisu sa znacima navoda*/
+    
+    var napunilaGodina = danas - godinaRodjenja;
+    
+    console.log(napunilaGodina);
+        
+    </script>
+    <div id="printer"></div>
+    <script>
+    document.getElementById("printer").innerHTML = ime + prezime + " napunila je" + napunilaGodina + " godina "
+        /* takodje mozemo umesto document.getelementbyid da unesemo printer.innerHTML i imamo istu fju kao i sa document. ...*/
+    </script>
+</body>
+</html>
