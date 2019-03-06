@@ -1,0 +1,62 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Pseudo Classes</title>
+		<meta charset="utf-8">
+
+		<style>
+	
+			.test {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				color: #fff;
+			}
+
+/*hover je ovde pseudo klasa*/
+
+			.test:hover {
+				background-color: #3434de;
+				width: 100px;
+				height: 100px;
+			}
+
+			.test2 {
+				border: 1px solid red;
+			}
+
+			p {
+				display: none;
+				background-color: yellow;
+				padding: 20px;
+				width: 200px;
+				height: 200px;
+			}
+
+			/* sa ovim kad predjemo preko test 2 teksta, ono sto je u sklopu paragrafa p ce da se pojavi skrivena slika sa recju div*/
+
+			.test2:hover p {
+				display: block;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="test"></div>
+
+		<br>
+		<br>
+		<br>
+
+	<div class="test2">
+		Come here! <i>Show p on hover</i>
+		<p>Hidden div</p>
+	<!-- ovaj <p> ce biti prikazan kad predjemo misem preko njega, jer smo ga u CSSu prikazali kao hover opciju-->
+
+	</div>
+
+	</body> 
+
+	</html>
