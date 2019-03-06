@@ -1,0 +1,41 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<style>
+		div.relative {
+			position: relative;
+			border: 3px solid #73AD21;
+			left: 50px;
+			top: 50px;
+		}
+		/*bottom: 30px;
+		right: 30px;*/
+
+		/*sa ovim  divom se igramo tako da kad predjemo misem preko static dela on se pomera gore zbog ove top naredbe*/
+
+		div.static:hover {
+			position: relative;
+			top:10px;
+			border: 3px solid #73AD21;
+		}
+	</style>
+
+		<title>Relative position</title>
+	</head>
+	<body>
+	<!--kad hocemo da promenimo static position, onda koristion relative umesto static;
+		i preko relative position mozemo da mu dajemo poziciju po zelji, odnosno levo, desno, marginu... on se pozicionira u odnosu na div u kom se nalazi, u nasem slucaju <div style="margin left: 50px">-->
+	<!--static pozicija je default-na pozicija, i kod nje ne mozemo da zadajemo margine, bordere i ostalo, vec je to unepred predodredjeno-->
+
+		<h2>position : relative </h2>
+
+		<p>An element with position : static; is not positioned in any special way it is; is is always positioned according to the normal flow of the page :</p>
+
+		<div style="margin-left: 50px;">
+			<div class="relative">
+		This div element has position : relative;
+			</div>
+		</div>
+
+	</body>
+	</html>
