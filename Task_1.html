@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ana Radojicic Task 1 22.02.2019.</title>
+   <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+   
+   <style>
+.para {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    padding: 0 15px;
+       }
+body {
+    margin: 0;
+    padding: 0;
+    color: #ff33ff;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.dugme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30x;
+       }
+    
+       
+    
+    </style>
+</head>
+<body>
+  
+  <header>
+      
+      <h3>Ana Radojicic</h3>
+      <h3>22.02.2019.</h3>
+  </header>
+  
+  <div class="para">
+   <p>Paragraf 1</p>
+   <p>Paragraf 2</p>
+   <p id="thirdParagraph">Paragraf 3</p>
+   <p>Paragraf 4</p>
+   <p>Paragraf 5</p>
+   <p>Paragraf 6</p>
+   <p>Paragraf 7</p>
+   <p>Paragraf 8</p>
+   <p>Paragraf 9</p>
+   <p>Paragraf 10</p>
+   <p>Paragraf 11</p>  
+</div>
+ 
+    <div class="dugme">   
+     <button onclick="color()" >Run Task 1</button> <br>
+     <button onclick="changeColor()">Run Task  2</button> <br>
+     <button onclick="clickMe()">Run Task 3</button>
+    </div>
+     
+     <script>  
+    function changeColor(fja) {     
+        
+        for (i=0; i<12; i++)   
+        document.querySelectorAll("p")[i].style.color ="red";
+    }
+       
+       
+       function color(){
+       document.getElementById("thirdParagraph").style.backgroundColor = 'orange';
+       }
+       
+
+   function  clickMe() {
+for (i=0; i<pNum; i++) {
+    
+    
+    if(i == 6 || i == 9){
+           let p = document.querySelectorAll('p')[i];
+           p.style.fontSize = "20px";
+
+           let s = document.createElement('span');
+           let textNode = document.createTextNode('Changed text-');
+           s.appendChild(textNode);
+
+           p.insertBefore(s, p.childNodes[0]);
+
+           }
+       }
+   }
+    </script>
+</body>
+</html>    
