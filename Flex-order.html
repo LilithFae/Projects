@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox order</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<style>
+
+		body {
+			height: 100%;
+			margin: 0;
+		}
+
+		/*display flex uvek ide korak iznad od onoga sto zelimo da nam bude ukljuceno u flex momenat;
+		flex direction je na koji nacin zelimo da nam kolona, odnosno ono sto je obuhvaceno u flexu bude orijentisano; row je default-na opcija*/
+		
+		/*wrap reverse, row reverse, column reverse, row, column - sve ovo su opcije na koji nacin mozemo da prikazemo nas text*/
+
+		/*WRAP nam pomaze da se materijal iz veba prilagodi ekranu uredjaja na kom gledamo materijal*/
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			/*flex-wrap*/
+			flex-wrap: wrap;
+			/*flex-wrap : wrap-reverse (suprotan redosled)*
+			flex wrap je da kad menjamo velicinu browsera elementi prate smanjivanje*/
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+		}
+
+		/*flex grow daje proporciju za svaki element; ako je vrednost 1 onda znaci da su svi elementi u razmeri 1:1, ali ako zadamo neku drugu vrednost za neki element, on ce imati drugaciju proporciju u odnosu na druge elemente*/
+		li  {
+			padding-top: 45px;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			flex-grow: 1;
+		}
+
+		/*order nam sluzi da im promenimo raspored, odnosno da budu prikazani drugim redom onim kojim mi zelimo*/
+		ul li:nth-child(1) {
+			background-color: aqua;
+			order: 1;
+		}
+
+		ul li:nth-child(2) {
+			background-color: yellow;
+			order: 5;
+		}
+
+		ul li:nth-child(3) {
+			background-color: red;
+			order: 3;
+		}
+
+		ul li:nth-child(4) {
+			background-color: green;
+			order: 2;
+		}
+
+		ul li:nth-child(5) {
+			background-color: pink;
+			order: 4;
+		}
+
+		ul li:nth-child(6) {
+			background-color: orange;
+			order: 6;
+		}
+
+	</style>
+</head>
+<body>
+
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li style="flex-grow:2">3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</ul>
+
+</body>
+</html>
