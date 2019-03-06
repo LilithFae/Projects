@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+    #lepota {    
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: dodgerblue;
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+            }
+        
+        #studenti {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #studenti div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            margin:10px 20px;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        a {
+            border: 1px solid black;
+            margin: 20px;
+            font-size: 15px;
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+           
+       h1 {
+           text-decoration: underline;
+           color: white;
+        }
+    img {
+        width: 100px;
+        height: 70px;
+        margin: 5px;
+        border-radius: 20px;
+        
+        }
+     
+    </style>
+</head>
+<body>
+<div id="lepota">
+
+        <a href="https://itbcg3-anr.000webhostapp.com/index/index.html">Top Users</a>
+
+    <div id="studenti"></div>
+</div>
+<script>
+    let dataFromServer = `
+    [
+      {
+        "id": 1,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "Sincere@april.biz"
+      },
+      {
+        "id": 2,
+        "name": "Ervin Howell",
+        "username": "Antonette",
+        "email": "Shanna@melissa.tv"
+      },
+      {
+        "id": 3,
+        "name": "Clementine Bauch",
+        "username": "Samantha",
+        "email": "Nathan@yesenia.net"
+      },
+      {
+        "id": 4,
+        "name": "Patricia Lebsack",
+        "username": "Karianne",
+        "email": "Julianne.OConner@kory.org"
+      },
+      {
+        "id": 5,
+        "name": "Chelsey Dietrich",
+        "username": "Kamren",
+        "email": "Lucio_Hettinger@annie.ca"
+      }
+    ]`;
+let students =JSON.parse(dataFromServer);
+    console.log(students[0].name);
+    console.log(students[0].username);
+    console.log(students[0].email);
+    
+    var text = " ";
+    for (var property in students) {
+        text +="<div>" + "<img src='" + students[property].username + ".jpg'/>" + "<br>" + students[property].name + "<br> "  + students[property].username + "<br> " + "<a href='mailto:" + students[property].email + "'>Email me</a>" + "</div>";
+    
+    }
+        document.getElementById("studenti").innerHTML = text;
+        document.getElementById("studenti").style.display = "flex";
+
+</script>
+</body>
+</html>
