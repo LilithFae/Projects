@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apple</title>
+    <link rel="stylesheet" href="apple.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+    </script>
+</head>
+<body>
+<header>
+<i class="fas fa-bars"></i>
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<nav>
+<ul>
+    <li><a href="index.html"><img id="logo" src="images/logo.png" /></a></li>
+    <li><a href="#">Mac</a></li>
+    <li><a href="#">iPad</a></li>
+    <li><a href="#">iPhone</a></li>
+    <li><a href="#">Watch</a></li>
+    <li><a href="#">TV</a></li>
+    <li><a href="#">Music</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Search</a></li>
+    <li><a href="#">Bag</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="intro">
+<div class="button-container">
+    <button>Limited time</button>
+</div>
+<h2>iPhone XR from $449. iPhone XS from $699.*</h2>
+</section>
+<section id="section-2" onclick="changeImage()">
+
+<!--u onclick moram da upisem ime function da bih pozvala funckiju koju zelim da izvrsim-->
+
+<button>Click me to change bg image</button>
+</section>
+</main>
+<script>
+    function changeImage() {
+        let main = document.getElementsByTagName("main") [0];
+        
+        main.style.backgroundImage = "url(images/macbook.jpg)";
+        main.style.backgroundColor = "aqua";
+        main.style.backgroundSize = "90% auto";
+        /* main.style.background... se zove DOM JS-a i on je taj koji menja elemente*/
+    }
+</script>
+</body>
+</html>
