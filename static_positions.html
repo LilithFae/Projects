@@ -1,0 +1,39 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<style>
+		div.static {
+			position: static;
+			border: 3px solid #73AD21;
+			left: 50px;
+			top: 50px;
+		}
+		/*bottom: 30px;
+		right: 30px;*/
+
+		/*sa ovim  divom se igramo tako da kad predjemo misem preko static dela on se pomera gore zbog ove top naredbe*/
+
+		div.static:hover {
+			position: absolute;
+			top:10px;
+			border: 3px solid #73AD21;
+		}
+	</style>
+		<title>Static position</title>
+	</head>
+	<body>
+	
+	<!--static pozicija je default-na pozicija, i kod nje ne mozemo da zadajemo margine, bordere i ostalo, vec je to unepred predodredjeno-->
+
+		<h2>position : static </h2>
+
+		<p>An element with position : static; is not positioned in any special way it is; is is always positioned according to the normal flow of the page :</p>
+
+		<div style="margin-left: 50px;">
+			<div class="static">
+		This div element has position : static;
+			</div>
+		</div>
+
+	</body>
+	</html>
