@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+</head>
+<body>
+   <script>
+       /*programirati dodatne zahteve za kalkulator:
+       oduzimanje brojeva
+       mnozenje brojeva
+       deljenje brojeva*/
+       
+           
+       function sum() {
+           var broj1 = +document.getElementsByTagName("input")[0].value;
+           var broj2 = +document.getElementsByTagName("input")[1].value;
+                  ispisi(broj1+broj2);
+       }
+       function oduzmi() {
+           var broj1 = +document.getElementsByTagName("input")[0].value;
+           var broj2 = +document.getElementsByTagName("input")[1].value;
+           ispisi(broj1-broj2);
+       }
+       
+       function pomnozi() {
+           var broj1 = +document.getElementsByTagName("input")[0].value;
+           var broj2 = +document.getElementsByTagName("input")[1].value;
+           ispisi(broj1*broj2);
+       }
+           
+       function podeli() {
+           var broj1 = +document.getElementsByTagName("input")[0].value;
+           var broj2 = +document.getElementsByTagName("input")[1].value;
+           ispisi(broj1/broj2);
+       }
+           
+       
+       /* "+" ispred document nam sluzi da ono sto je "input" bude prepoznato kao broj, tako da se ti elementi sabiraju, a ne da
+       se dodaju jedan na drugi, odnosno da se ne spajaju kao jedna rec, nego da se saberu*/
+       
+       function ispisi(rezultat) {
+           document.getElementById("printer").innerHTML = rezultat;
+       }
+    </script>
+    <div id="printer"></div>
+    <p>
+        <input type="number">
+        <input type="number">
+    </p>
+    <button onclick="sum()">Sum</button>
+    <button onclick="oduzmi()">Oduzmi</button>
+    <button onclick="pomnozi()">Pomnozi</button>
+    <button onclick="podeli()">Podeli</button>
+    
+       <script>
+       /*programirati dodatne zahteve za kalkulator:
+       oduzimanje brojeva
+       mnozenje brojeva
+       deljenje brojeva*/
+       
+           
+       function sum() {
+           var broj1 = +document.getElementsByTagName("input")[0].value;
+           var broj2 = +document.getElementsByTagName("input")[1].value;
+                  ispisi(broj1+broj2);
+       }
+       function oduzmi() {
+           var broj1 = +document.getElementsByTagName("input")[0].value;
+           var broj2 = +document.getElementsByTagName("input")[1].value;
+           ispisi(broj1-broj2);
+       }
+       
+       function pomnozi() {
+           var broj1 = +document.getElementsByTagName("input")[0].value;
+           var broj2 = +document.getElementsByTagName("input")[1].value;
+           ispisi(broj1*broj2);
+       }
+           
+       function podeli() {
+           var broj1 = +document.getElementsByTagName("input")[0].value;
+           var broj2 = +document.getElementsByTagName("input")[1].value;
+           ispisi(broj1/broj2);
+       }
+           
+       
+       /* "+" ispred document nam sluzi da ono sto je "input" bude prepoznato kao broj, tako da se ti elementi sabiraju, a ne da
+       se dodaju jedan na drugi, odnosno da se ne spajaju kao jedna rec, nego da se saberu*/
+       
+       function ispisi(rezultat) {
+           document.getElementById("printer").innerHTML = rezultat;
+       }
+    </script>
+   
+    </body>
+</html>
