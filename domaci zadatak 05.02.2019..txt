@@ -1,0 +1,10 @@
+Napraviti galeriju koristeci html i css.
+Galerija mora da sadrzi 3 odvojene sekcije sa slikama.
+Na vrhu galerije treba da postoji traka proizvoljne boje.
+Ta traka treba da se pomera zajedno sa stranicom
+U prvoj sekciji svaka parna slika mora da ima plavi border oko nje,
+a neparna slika da ima crveni border oko nje.
+U drugoj sekciji slike moraju da budu poredjane kaskadno jedna preko druge(z-index) i da kad se slika hoveruje, izadje u prvi plan
+U trecoj sekciji potrebno je da svaka treca slika ima border,
+pocevši od poslednje slike.
+https://www.w3schools.com/cssref/sel_nth-last-child.asp
