@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vezba 22022019</title>
+</head>
+<body>
+<div id="container"></div>
+ <script>
+     var Slike = ['images/banana-wide.jpg', 'images/boller.jpg',
+                          'images/boller-surprise.jpg', 'images/chocolate-frog.jpg', 'images/dinosaur-jacket.jpg',
+                 'images/diving-bird.jpg', 'images/pool-cue-jenga.jpg'];
+        
+        var container = document.querySelector('#container');
+     
+     for(i = 0; i < Slike.length; i++) {
+             container.innerHTML += "<img src ='" + Slike[i] + "'>";
+           
+     if(i==2) {
+         document.querySelectorAll('img')[i].style.transform = "rotate(20deg)"; }
+     
+     }    
+    </script>
+</body>
+</html>
