@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <title>Document</title>
+    
+<style>
+    header {        
+        border: 2px solid violet;
+        width: 400px;
+        }
+      .navigation  {
+      	display: flex;
+        flex-direction: row;
+        align-content: center;
+        width: 400px;
+      }
+        
+    button {
+        background-color: aqua;
+        border: 2px solid green;
+    }
+h3 {
+    color: white;
+    }  
+
+  
+
+    </style>
+</head>
+<body>
+   <header> 
+       <div class="navigation">     
+        <h2>Task 1 : JS DOM </h2>
+        <h3>TEXT</h3>
+        <h2>Ana Radojicic</h2>   
+    </div>
+   </header>
+   <br>
+   <div id="text1">
+   Sample text - Click button to run program   
+   </div><br>
+   <button onclick='izmeniTekst()'>Run</button>
+   
+   <script>
+       function izmeniTekst() {
+           var zamena = document.getElementById("text1").innerHTML="Hello world, this is new text !";
+ 
+        }
+                        
+ 
+   </script>
+    
+</body>
+</html>
