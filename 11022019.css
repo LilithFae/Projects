@@ -1,0 +1,78 @@
+	header {
+		width: 590px;
+		font: purple;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+
+	.red2 {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border: 1px solid #f6f6f6;
+		padding: 5px;
+		width: 200px;
+		height: 35px;
+		margin: 5px;
+		margin-left: 0;
+		color: gray;
+	}
+	.tekst {
+		color: violet;
+		font-size: 13px;
+	}
+
+	#redx {
+		align-items: left;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:space-around;
+		width: 500px;
+	}
+
+	footer {
+		size: 50px;
+	}
+
+	#submitButton {
+	
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  margin: 20px;
+			  color: white;
+			  background-color: #555555;
+			  border: 1px solid #555555;
+			  width: 115px;
+			  height: 40px;
+			  font-size: 10px;
+
+	}
+
+	#pol {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border: 1px solid #f6f6f6;
+		padding: 5px;
+		width: 200px;
+		height: 35px;
+		margin: 5px;
+		margin-left: 0;
+		color: black;
+	}
+
+    input {
+       background: linear-gradient(to bottom,gray 10%, white);
+       padding: 20px;
+       padding-right: 40px;
+       padding-left: 40px;
+       background-color: #545454;
+       border: 0;
+       color: #fff;
+       margin: 10px;
+       }
