@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <title>Document</title>
+    
+<style>
+    
+    header {    
+        border: 2px solid violet;   
+        width: 500px;
+    }
+    
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+    height: 100px;
+    }
+    
+    button {
+        background-color: aqua;
+        border: 2px solid green;
+    }
+h3 {
+    color: white;
+    }
+
+.box {
+    border: 1px solid black;
+    margin: 30px;
+    padding: 10px;
+    margin-right: 1000px;
+    text-align: center;
+    }
+    
+    
+        
+    </style>
+</head>
+<body>
+   <header> 
+       <div class="navigation">     
+        <h2>JS - if else</h2>
+        <h3>TEXT</h3>
+        <h2>Ana Radojicic</h2>   
+    </div>
+    </header>
+    <br> 
+    <input type="number" id="box"><br><br>
+    
+   
+      <button onclick="editText()">Run</button>
+      <div id="proba"></div>
+      
+      
+
+    <h5>Enter number and click Run to start</h5>
+
+   
+   <script>
+       
+       
+       function editText()
+       {
+           var x = document.getElementById('box').value;
+           if (x > 20) { 
+               document.getElementById('proba').innerHTML='number is larger than 20';
+               
+       }
+           
+           else if (x <= 20) {
+               document.getElementById('proba').innerHTML='number is smaller than 20';
+           }
+       }
+               
+   </script>
+    
+</body>
+</html>
