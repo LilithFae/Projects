@@ -1,0 +1,33 @@
+		<!DOCTYPE html>
+	<html>
+	<head>
+		<title>CSS ul li</title>
+		<meta charset="utf-8">
+		<style>
+			/*svaki prvi p koji se nalazi posle div elementa*/			
+
+			div + p {  
+				color: blue; 
+			}
+		</style>
+	</head>
+	
+	<!-- ovde je body roditelj div-u, a div je roditelj section-u-->
+
+	<body>
+		<div>
+			<section>
+				<p>Section header</p>
+			<div>
+				<p>Section content</p>
+			</div>
+			</section>
+		</div>
+		<p>Hello Earth !</p>
+		<p>Hello moon !</p>
+
+		<div></div>
+		<p>Hello mars !</p>
+	
+	</body>
+	</html>
