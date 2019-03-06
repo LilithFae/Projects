@@ -1,0 +1,70 @@
+		<!DOCTYPE html>
+	<html>
+	<head>
+		<style>
+
+		div.absolute {
+			position: absolute;
+			width: 200px;
+			height: 100px;
+			border: 3px solid #73AD21;
+			color: #fff
+			}
+
+			#div1 {
+
+				left: 50px;
+				top: 20px;
+				background-color: red;
+				z-index: 2;
+			}
+
+			/*div dva ima left 300px i to znaci da je on pomeren od leve strane za 300px, a div1 je pomeren za 50px od leve strane*/
+
+			#div2 {
+				left: 200px;
+				top: 20px;
+				background-color: blue;
+				z-index: 1;
+			}
+			/*ako stavimo da div2 ima manju vrednost left, to znaci da ce preklopiti div1. Ako hocemo da odredimo koji div ce preklopiti koji div, onda koristimo vrednost z index-a*/
+			/*z index nam sluzi ako hocemo da jedan kvadrat ide preko drugog i veca vrednost znaci da ce taj div da ide preko onog sa manjim brojem; z index takodje ima i negativnu vrednost, odnosno "-". jer je njegova difoltna vrednost "0"*/
+
+			#div3 {
+				left: 350px;
+				top: 30px;
+				background-color: yellow;
+				z-index: -1;
+				color: black;
+			}
+
+
+			#div4 {
+				left: 80px;
+				top: 40px;
+				background-color: aqua;
+				z-index: 4;
+				color: black;
+			}
+
+	</style>
+
+		<title>absolute position</title>
+	</head>
+	<body>
+	
+	<div id="div1" class="absolute">
+		The div element has position absolute
+	</div>
+	<div id="div2" class="absolute">
+		The div element has position absolute
+	</div>
+	<div id="div3" class="absolute">
+		Patak Daca
+	</div>
+	<div id="div4" class="absolute">
+		Mrgud
+	</div>
+
+	</body>
+	</html>
