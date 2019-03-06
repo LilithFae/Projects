@@ -1,0 +1,20 @@
+<!DOCTYsectionE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class selector</title>
+</head>
+<body>
+    <section class="testClass">Krem Bananica</section>
+    <section class="testClass">Cokolada sa lesnjacima i suvim grozdjem</section>
+    <section class="testClass">Sweet</section>
+    <section>Za-Za</section>
+    <section>Nela napolitanke</section>
+    
+    <script>
+      document.querySelector('.testClass').style.color = "violet";
+        //preko querySelectora targetiramo samo prvi element u kodu
+        document.querySelectorAll('.testClass')[2].style.color = "aqua";
+    </script>
+</body>
+</html>
