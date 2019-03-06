@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .kvadrat {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: 5px;
+        }
+        .krug{
+        width: 300px;
+            height: 300px;
+            background-color: blue;
+            margin: 5px;
+            border-radius:50%;
+        
+        }
+    </style>
+</head>
+<body>
+    <section id="main">
+        <h2> Web store </h2>
+    </section>
+    <section id="subsection1">
+        <h2> Content </h2>
+    </section>
+    
+    <button onclick="addElement('krug')">Dodaj krug</button>
+    <button onclick="addElement('kvadrat')">Dodaj kvadrat</button>
+    <button onclick="addElement('element')">Dodaj element</button>
+   
+    <script>
+      
+        let main = document.getElementsByTagName("section")[1];          
+     
+        let elementKrug = "<div class='krug'>krug</div>";
+        let elementKvadrat = "<div class='kvadrat'>kocka</div>";
+        
+        function addElement(oblik){
+           
+          
+            if(oblik=='krug'){
+                main.innerHTML += elementKrug;
+            }else if(oblik=='kvadrat'){
+                main.innerHTML += "<div class='kvadrat'>kocka</div>";
+            }else{
+               alert('error 404');
+        }
+        }
+    </script>
+</body>
+</html>
