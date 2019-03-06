@@ -1,0 +1,62 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Vezba</title>
+		<meta charset="UTF-8">
+		<style>
+    body {
+	font-family: indie-flower;
+	font-size: 25px;
+	color: blue;
+	border-color: yellow;
+}
+
+.naslov {
+	background-color: yellow;
+	padding: 15px;
+	text-align: center;	
+}
+</style>
+	</head>
+	<body>
+		<header class="naslov"><h2>Road bikes online</h2></header>
+
+		<table border="10px solid blue">
+			<thead>
+				<tr class="bikes">
+					<td>Slika</td>
+					<td>Cena</td>
+					<td>Opis</td>
+				</tr>
+			</thead>
+		<tbody>
+			<tr>
+				<td><img src="sworks Tarmac.jpg" alt="S-Works Tarmac" style="width: 150px; height:100px;">
+										</td>
+			<td>15.000 $</td>
+			<td class="bikes"><a href="https://www.specialized.com/us/en/mens-s-works-tarmac/p/129090" target="_blank">S-Works Tarmac</a></td>
+		</tr>
+		
+			<tr>
+				<td><img src="Bianchi Oltre XR3.jpg" alt="Bianchi Oltre XR3" style="width: 150px; height: 100px;"></td>
+			<td>12.870 $</td>
+			<td class="bikes"><a href="http://www.bianchiusa.com/bikes/road/extreme-racing/oltre-xr3-disc-ultegra-di2/" target="_blank">Bianchi Oltre XR3</a></td>
+			
+		</tr>
+
+			<tr>
+				<td><img src="trek Domane.jpg" alt="Trek Domane" style="width: 150px; height: 100px;">
+					
+				</td>
+			<td>15.300 $</td>
+			<td class="bikes"><a href="https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-9-disc-etap/p/25349/?colorCode=red_white" target="_blank">Trek Domane</a></td>
+		</tr>
+		</tbody>
+		    
+	</table>
+
+	<p><h4>Osnovne informacije o drumskim biciklima i njihovoj trenutnoj ceni</h4></p>
+
+	
+	</body>
+	</html>
